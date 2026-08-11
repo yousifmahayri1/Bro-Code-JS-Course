@@ -59,7 +59,25 @@ document.getElementById('mySubmit').onclick = function()
 }
 // header.textContent = `Hello ${Username} you are ${age} welcome to our webpage` 
 
+//type conversion
 
+let secondAge = window.prompt('How old are you?')
 
+// age += 1 
+// age is of the datetype string here 
 
+secondAge = Number(age)
+
+// this function converts the datatype to number 
+secondAge += 1
+
+console.log(secondAge)
+
+let x = "pizza"
+let y = "pizza"
+let z = "pizza"
+
+x = Number(x)
+y = String(y)
+z = Boolean(z)
 
