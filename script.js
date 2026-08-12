@@ -61,11 +61,12 @@ document.getElementById('mySubmit').onclick = function()
 
 //type conversion
 
-let secondAge = window.prompt('How old are you?')
+// let secondAge = window.prompt('How old are you?')
 
 // age += 1 
 // age is of the datetype string here 
 
+let secondAge
 secondAge = Number(age)
 
 // this function converts the datatype to number 
@@ -80,4 +81,64 @@ let z = "pizza"
 x = Number(x)
 y = String(y)
 z = Boolean(z)
+
+//day 2 
+
+const pi = 3.14159
+let radius 
+let circumference
+
+let radiusSubmit = document.getElementById('radiusSubmit')
+radiusSubmit.onclick = function()
+{
+    radius = document.getElementById('radiusInput').value
+    radius = Number(radius)
+    circumference = 2 * pi * radius
+    document.getElementById('circumferenceValue').textContent = "The circumference is :" + circumference
+}
+//counter program
+let increaseBtn = document.getElementById('increaseBtn')
+let decreaseBtn =document.getElementById('decreaseBtn')
+let resetBtn = document.getElementById('resetBtn')
+let count = 0
+let countDisplay = document.getElementById('countDisplay')
+
+function increaseFun()
+{
+    count += 1
+    countDisplay.innerText = count
+}
+
+function decreaseFun()
+{
+    count -= 1
+    countDisplay.innerText = count
+}
+
+function resetFun()
+{
+    count = 0
+    countDisplay.innerText = count
+}
+
+increaseBtn.onclick = increaseFun
+decreaseBtn.onclick = decreaseFun
+resetBtn.onclick = resetFun
+
+// math object 
+//get back to math object when needed , not gonna write it down
+
+//random number generator 
+
+let randomNum = Math.random()
+console.log(randomNum)
+
+// if u want a random number between 1 - 6 
+
+let randomDice = Math.floor(Math.random() * 6) + 1
+
+//also get back to it when needed
+
+// if statements
+
 

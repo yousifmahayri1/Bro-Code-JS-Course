@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
     <h1 id="header">Welcome</h1>
     <!-- <p id="header">
         Welcome
@@ -14,7 +15,22 @@
 
     <label>username: </label>
     <input id="myText"> <br><br>
-    <button id="mySubmit">submit</button>
+    <button id="mySubmit">submit</button> <br> <br>
+
+    <label>Enter the radius of the circle: </label>
+    <input id="radiusInput"> <br> <br> 
+    <button id="radiusSubmit">Submit</button>
+    <h3 id="circumferenceValue">The circumference is :</h3>
+    </div>
+    
+     <div class="counter-container">
+    <div class="counter-value" id="countDisplay">0</div>
+    <div class="button-group">
+      <button class="btn" id="decreaseBtn">decrease</button>
+      <button class="btn" id="resetBtn">reset</button>
+      <button class="btn" id="increaseBtn">increase</button>
+    </div>
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
