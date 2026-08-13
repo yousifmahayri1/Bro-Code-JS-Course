@@ -211,4 +211,76 @@ let GREETING = time < 12 ? "Morning" : "Afternoon"
 
 console.log(GREETING)
 
+// switches , an efficient replacement for many else if statements 
+
+let daySwitch = 1
+
+switch(daySwitch)
+{
+    case 1 : 
+    // any code 
+    console.log('it is monday') 
+    break
+    
+    case 2 : 
+    console.log('it is tuesday')
+    break
+    // etc 
+    default : 
+    console.log('executed if there are no matching cases')
+}
+
+// string methods , built in methods
+
+let stringMethod = 'BroCode'
+
+stringMethod.charAt(0)
+
+// gets the character at a specific index 
+
+stringMethod.indexOf("o") 
+// returns the index of the first occurance of a char
+
+stringMethod.lastIndexOf("o")
+
+stringMethod.length
+
+stringMethod.trim()
+
+// removes white space 
+
+stringMethod.toUpperCase()
+
+stringMethod.toLocaleLowerCase()
+
+stringMethod.repeat(3)
+
+let userNameMethod = " BroCode"
+
+let methodResult = userNameMethod.startsWith(" ")
+
+if(methodResult)
+{
+    console.log('Your username cant begin with a white space')
+}
+else 
+{
+    console.log(methodResult)
+}
+
+// theres also endswith 
+
+// userNameMethod.includes(" ") 
+
+let phoneNumber = "123-425-2352"
+
+phoneNumber = phoneNumber.replaceAll("-" , "/")
+
+// replaces first with second 
+
+// string slicing 
+
+
+
+
 
