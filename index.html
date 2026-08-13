@@ -15,7 +15,7 @@
 
     <label>username: </label>
     <input id="myText"> <br><br>
-    <button id="mySubmit">submit</button> <br> <br>
+    <button id="usernameSubmit">submit</button> <br> <br>
 
     <label>Enter the radius of the circle: </label>
     <input id="radiusInput"> <br> <br> 
@@ -31,6 +31,22 @@
       <button class="btn" id="increaseBtn">increase</button>
     </div>
   </div>
+
+  <input type="checkbox" id="myCheckBox">
+  <label for="myCheckBox">subscribe</label> <br>
+  
+  <input type="radio" id="visaBtn" name="card"> 
+  <label for="visaBtn">Visa</label>
+   <input type="radio" id="masterCardBtn" name="card">
+  <label for="masterCardBtn">mastercard</label> 
+   <input type="radio" id="payPalBtn" name="card">
+  <label for="payPalBtn">paypal</label>
+
+  <button type="submit" id="mySubmit">submit</button>
+  <br> <br>
+  <p id="subResult"></p>
+  <br> <br>
+  <p id="paymentResult"></p>
     <script src="script.js"></script>
 </body>
 </html>

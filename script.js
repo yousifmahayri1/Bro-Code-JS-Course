@@ -51,7 +51,7 @@ console.log(username)
 //below is the professional way 
 
 let Username
-document.getElementById('mySubmit').onclick = function()
+document.getElementById('usernameSubmit').onclick = function()
 {
     Username = document.getElementById('myText').value
     console.log(Username)
@@ -96,6 +96,7 @@ radiusSubmit.onclick = function()
     circumference = 2 * pi * radius
     document.getElementById('circumferenceValue').textContent = "The circumference is :" + circumference
 }
+
 //counter program
 let increaseBtn = document.getElementById('increaseBtn')
 let decreaseBtn =document.getElementById('decreaseBtn')
@@ -140,5 +141,74 @@ let randomDice = Math.floor(Math.random() * 6) + 1
 //also get back to it when needed
 
 // if statements
+
+let age2 = 25
+
+if (age2 >= 18)
+{
+    console.log('You are old enough to enter this site')
+}
+else if (age2 === 14)
+{
+    console.log('GET OUT')
+}
+else 
+{
+    console.log('You must be over 18 to enter this site')
+}
+
+
+//day 3
+
+const myCheckBox = document.getElementById('myCheckBox')
+const visaBtn = document.getElementById('visaBtn')
+const masterCardBtn = document.getElementById('masterCardBtn')
+const payPalBtn = document.getElementById('payPalBtn')
+const subResult = document.getElementById('subResult')
+const mySubmit = document.getElementById('mySubmit')
+const paymentResult = document.getElementById('paymentResult')
+
+mySubmit.onclick = function()
+{
+    if(myCheckBox.checked)
+    {
+        subResult.textContent = "You are subscribed"
+    }
+    else
+    {
+        subResult.textContent = "You are not subscribed"
+    }
+
+    if (visaBtn.checked)
+    {
+        paymentResult.textContent = "You are paying with visa"
+    }
+    else if (masterCardBtn.checked)
+    {
+        paymentResult.textContent = "You are paying with Mastercard"
+    }
+    else if (payPalBtn.checked)
+    {
+        paymentResult.textContent = "You are paying with PayPal"
+    }
+    else
+    {
+        paymentResult.textContent = "Please select a payment method"
+    }
+}
+//ternary operator 
+
+// a shortcut for if and else statements 
+
+let AGE =18
+let MESSAGE = AGE >= 18 ? "you are an adult" : "you are a minor"
+
+console.log(MESSAGE)
+// condition ? codeiftrue : codeiffalse 
+
+let TIME = 16
+let GREETING = time < 12 ? "Morning" : "Afternoon"
+
+console.log(GREETING)
 
 
