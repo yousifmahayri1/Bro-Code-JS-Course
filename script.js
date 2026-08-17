@@ -280,7 +280,164 @@ phoneNumber = phoneNumber.replaceAll("-" , "/")
 
 // string slicing 
 
+// creating a substring from a portion of another string 
 
+// string.slice(start , end) 
 
+const fullNameSlice = "Bro Code"
 
+let slicedName = fullNameSlice.slice(0 , 2)
+
+// use index 
+
+//method chaining
+//calling one method after another in one line of code  
+// the code beneath is with no method chaining
+// let chain = window.prompt('enter your username:') 
+
+// chain = chain.trim() 
+// removes whitespace before or after the string 
+// let letter1 = chain.charAt(0) 
+// letter1 = letter1.toUpperCase() 
+// let extraChars = chain.slice(1)
+// extraChars = extraChars.toLowerCase 
+
+// the code beneath is with method chaining
+
+// username = username.trim().charAt(0).toLocaleLowerCase() 
+
+// like a combo of methods 
+
+// logical operators 
+// and && 
+// or | | 
+// not ! 
+
+const temp = 20
+
+if (temp > 0 && temp <= 30)
+{
+    console.log("The weather is good")
+}
+else if (temp != 67)
+{
+    console.log("NOT 67")
+}
+else if (temp > 1 || temp < 3)
+{
+    console.log('hello')
+}
+else 
+{
+    console.log('anything')
+}
+
+const isSunny = true
+
+if (!isSunny)
+{
+    console.log("It is not sunny ")
+}
+
+// strict equality 
+
+// = assignment operator 
+
+// == comparison operator 
+
+// === strict equality (compares if values and data types are equal) 
+
+// != inequality operator 
+
+// !== strict inequality operator 
+
+const PI = 3.14
+
+if (PI == '3.14')
+{
+    console.log('PI')
+}
+else {
+    console.log('NOT PI')
+}
+
+// if (PI === '3.14 ') wouldve given NOT PI because 
+// === compares values AND data types 
+
+// while loops 
+
+// let whileusername = ''
+
+// while (whileusername === "" )
+// {
+//     console.log('you didnt enter your username yet ')
+// }
+
+let username67 = ''
+
+while (username67 === '')
+{
+    username67 = window.prompt("Enter your username")
+}
+console.log(`Hello ${username67}`)
+
+let dont
+
+do {
+    console.log('idk')
+} 
+while(dont === '' || dont = null)
+
+let loggedIn = true
+let userr 
+let password 
+
+while (!loggedIn)
+{
+    userr = window.prompt('Enter a username')
+    password = window.prompt('enter a password')
+}
+
+// for loops 
+
+for (let i = 0 ; i < 3 ; i++)
+{
+    console.log(i)
+}
+
+// number guessing game 
+
+const minNum = 1
+const maxNum = 100
+
+//to generate a random num use math.random method
+// Math.random generates a random number between 0 and 1 
+
+const answer = Math.random() * (maxNum − minNum + 1)
+
+Math.floor(answer)
+// to round down 
+
+// functions 
+
+function happyBirthDay() {
+    console.log('happy birthday')
+}
+happyBirthDay()
+
+function ageFun(ageVar)
+{
+    console.log(`you are ${ageVar}`)
+}
+
+ageFun(14)
+
+function add(x , y)
+{
+    let result = x + y 
+    return result
+
+    // or return x + y 
+}
+console.log(add(2 , 4))
 
