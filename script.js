@@ -441,3 +441,58 @@ function add(x , y)
 }
 console.log(add(2 , 4))
 
+//new day
+
+// variable scope 
+
+// local scopes = no naming conflicts
+
+// global scope naming conflicts 
+
+// functions cant see inside of other functions 
+
+// arrays 
+
+// a structure that can hold more than one value 
+
+let fruits = ['apple' , 'orange' , 'banana']
+
+console.log(fruits[0])
+
+console.log(fruits) //prints out all of them 
+
+console.log(fruits[3]) //undefined
+
+fruits.push('coconut') //adds an element to the arrray at the last index
+
+fruits.pop()  //deletes the last element
+
+fruits.unshift('mango') //adds an element to the begining
+
+fruits.unshift() //removes the first element
+
+fruits.length
+
+// to see the array size 
+
+let index = fruits.indexOf('orange')
+
+for (let i = 0 ; i < fruits.length ; i++)
+{
+    console.log(fruits[i])
+}
+
+for (let fruit of fruits){
+    console.log(fruits)
+}
+
+// a shortcut for displaying each index 
+
+fruits.sort()
+
+// sorts in alphabatical order 
+
+fruits.sort().reverse()
+
+// reversed alphabatical 
+
