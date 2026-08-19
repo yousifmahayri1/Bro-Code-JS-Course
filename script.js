@@ -524,5 +524,152 @@ const food4 = 'sushi'
 
 openFridge(food1 , food2 , food3 , food4)
 
-//random password generator 
+//random password generator , get back to it
+
+// callback = a function thats passed as an argument to another function 
+
+function helloFun()
+{
+    console.log('hello')
+}
+
+function goodbyeFun()
+{
+    console.log('goodbye')
+}
+
+helloFun(goodbye)
+
+// dont add () , youll call it right away , just use the fun name 
+// invoke means call 
+// this is called callback 
+//local variable = a variable thats declared inside a function 
+
+// iterate means loop through
+
+//foreach() = a method used to iterate over the elements of an array
+//and apply a specified functions (call back) to each element
+
+//  array.forEach(callback)
+
+let numbers = [1 , 3 , 5]
+
+function display(element)
+{
+    console.log(element)
+}
+
+numbers.forEach(display)
+
+// functions runs for each index 
+
+function doubleValue(element , index , array)
+{
+    array[index] = element * 2
+}
+
+numbers.forEach(double)
+
+//map() = a method that accepts a callback and applies that function to each element of an array 
+// BUT it returns a new array
+
+// so its like foreach but it returns a new array 
+
+const numbers = [1 , 2 , 3 , 4 , 5]
+
+function square(element)
+{
+    return Math.pow(element , 2)
+}
+
+const squares = numbers.map(square)
+
+const students = ['yousef' , 'patrick' , 'squid']
+
+function upperCase(element){
+    return element.toUpperCase()
+}
+
+const upperStudents = students.map(upperCase)
+
+// store the mapped array in a new variable
+
+// filter() = creates  a new array by filtering out elements
+
+ let number = [1,2,3,4,5,6,7]
+
+ function isEven(element) 
+ {
+    return element % 2 === 0
+
+    //is even = true
+ }
+
+ function isOdd(element)
+ {
+    return element % 2 !== 0
+ }
+
+ let evenNums = numbers.filter(isEven)
+ 
+ let oddNums = number.filter(isOdd)
+
+ let ageGroup = [ 10 , 2 , 20 , 21 , 100 , 2 , 6 , 16 , 12]
+
+ function isAdult(element)
+ {
+   return element > 18
+ }
+
+ let adultAgeGroup = ageGroup.filter(isAdult)
+
+ console.log(adultAgeGroup)
+
+ function isMinor(element)
+ {
+    return element < 18
+ }
+
+ let minorsAgeGroup = ageGroup.filter(isMinor)
+
+ // pass a function to filter by the functions rules
+
+ // REDUCE() = reduces the elements of an array to a single value
+
+ const pricesArray = [1 , 5 , 6 ,77, 49 , 30]
+
+ function sumPrices(previous , element)
+ {
+    return previous + element
+
+    // since reduce method runs for each array it will use all elements 
+    // and sum them 
+ }
+
+ const total = pricesArray.reduce(sumPrices)
+
+ // FUNCTIONS EXPRESSIONS
+//   = a way to define functions as values or variables
+
+ const hello = function()
+ {
+    console.log('hello')
+ }
+ hello()
+
+ setTimeout(function()
+ {
+    console.log('hello')
+ }
+ , 3000) //counted in ml seconds
+
+// in js you can pass an entire function as an argument and itll be treated as a value 
+// look above 
+
+//    arrow functions , good for simple functions youll only use once
+
+const hello = () => {console.log('hello')}
+
+hello()
+
 
