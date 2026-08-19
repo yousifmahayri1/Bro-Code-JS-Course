@@ -138,8 +138,6 @@ console.log(randomNum)
 
 let randomDice = Math.floor(Math.random() * 6) + 1
 
-//also get back to it when needed
-
 // if statements
 
 let age2 = 25
@@ -156,9 +154,6 @@ else
 {
     console.log('You must be over 18 to enter this site')
 }
-
-
-//day 3
 
 const myCheckBox = document.getElementById('myCheckBox')
 const visaBtn = document.getElementById('visaBtn')
@@ -196,6 +191,7 @@ mySubmit.onclick = function()
         paymentResult.textContent = "Please select a payment method"
     }
 }
+
 //ternary operator 
 
 // a shortcut for if and else statements 
@@ -207,7 +203,7 @@ console.log(MESSAGE)
 // condition ? codeiftrue : codeiffalse 
 
 let TIME = 16
-let GREETING = time < 12 ? "Morning" : "Afternoon"
+let GREETING = TIME < 12 ? "Morning" : "Afternoon"
 
 console.log(GREETING)
 
@@ -386,7 +382,7 @@ let dont
 do {
     console.log('idk')
 } 
-while(dont === '' || dont = null)
+while(dont === '' || dont === null)
 
 let loggedIn = true
 let userr 
@@ -413,9 +409,10 @@ const maxNum = 100
 //to generate a random num use math.random method
 // Math.random generates a random number between 0 and 1 
 
-const answer = Math.random() * (maxNum − minNum + 1)
+const answer = Math.random() * (maxNum - minNum + 1)
 
 Math.floor(answer)
+
 // to round down 
 
 // functions 
@@ -568,21 +565,21 @@ function doubleValue(element , index , array)
     array[index] = element * 2
 }
 
-numbers.forEach(double)
+numbers.forEach(doubleValue)
 
 //map() = a method that accepts a callback and applies that function to each element of an array 
 // BUT it returns a new array
 
 // so its like foreach but it returns a new array 
 
-const numbers = [1 , 2 , 3 , 4 , 5]
+const numbersMap = [1 , 2 , 3 , 4 , 5]
 
 function square(element)
 {
     return Math.pow(element , 2)
 }
 
-const squares = numbers.map(square)
+const squares = numbersMap.map(square)
 
 const students = ['yousef' , 'patrick' , 'squid']
 
@@ -610,7 +607,7 @@ const upperStudents = students.map(upperCase)
     return element % 2 !== 0
  }
 
- let evenNums = numbers.filter(isEven)
+ let evenNums = number.filter(isEven)
  
  let oddNums = number.filter(isOdd)
 
@@ -648,32 +645,31 @@ const upperStudents = students.map(upperCase)
 
  const total = pricesArray.reduce(sumPrices)
 
- // FUNCTIONS EXPRESSIONS
+// FUNCTIONS EXPRESSIONS
 //   = a way to define functions as values or variables
 
- const hello = function()
- {
+const hello = function()
+{
     console.log('hello')
- }
- hello()
+}
 
- setTimeout(function()
- {
+hello()
+
+setTimeout(function()
+{
     console.log('hello')
- }
- , 3000) //counted in ml seconds
+}
+, 3000) //counted in ml seconds
 
 // in js you can pass an entire function as an argument and itll be treated as a value 
 // look above 
 
 //    arrow functions , good for simple functions youll only use once
 
-const hello = () => {console.log('hello')}
+const helloArrow = () => {console.log('hello')}
 
-hello()
+helloArrow()
 
 // git test pull
 
 // test pull from github
-
-
