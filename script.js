@@ -673,3 +673,119 @@ helloArrow()
 // git test pull
 
 // test pull from github
+
+//Objects 
+// a collection of related properties or methods 
+
+const person1 = {
+    firstName: 'Yousif',
+    lastName: 'Mahayri',
+    age: 19,
+    isEmployed: true ,
+    greetingFun : function()
+    {
+        console.log('Hello , im Yousef')
+    }
+}
+
+console.log(person1.firstName)
+console.log(person1.lastName)
+console.log(person1.age)
+console.log(person1.isEmployed)
+
+// Objects can't have the same property name
+
+const car1 = {
+    name : 'Nissan' ,
+    year : 2026 ,
+    horsePower : '188 hp'
+}
+
+console.log(car1.horsePower)
+
+// this is a keyword , a reference to the object where THIS is used 
+
+const cinema = {
+    seats : 300 , 
+    isFoodAllowed : false , 
+    cinemaName : 'PrimeCinema' ,
+
+    welcome : () =>
+    {
+        console.log('Welcome to Prime Cinema')
+    } ,
+
+    numberOfSeats : function() {
+        console.log(`We have ${this.seats} left`)
+    }
+
+}
+
+cinema.welcome()
+
+// its like saying cinema.seats 
+
+const student2 = {
+    name : 'ali' ,
+    age : 19 ,
+    Identification : function() {
+        console.log(`Students name is ${this.name} and hes ${this.age} `)
+    }
+
+}
+
+// the this keyword doesnt work with arrow functions 
+
+// Constructors = speacial method for defining the properties and methods of an object
+
+function Car(make, model, year, color) {
+    this.make = make; 
+    this.model = model;
+    this.year = year; 
+    this.color = color;
+}
+
+const car3 = new Car('Ford', 'Mustang', 2024, 'red');
+
+console.log(car3.make);
+console.log(car3.model);
+console.log(car3.year);
+console.log(car3.color);
+
+const car4 = new Car('Chevrolet', 'Camaro', 2025, 'black');
+
+console.log(car4.make);
+console.log(car4.model);
+console.log(car4.year);
+console.log(car4.color);
+
+function Student(name, age, height) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+}
+
+const student10 = new Student('Ahmad', 14, 160);
+
+console.log(student10.name);
+
+// constructors should start start with a capital letter
+// use the keyword new 
+
+// Classes
+
+class Product {
+    constructor(name , price) {
+        this.name = name ; 
+        this.price = price
+    }
+    
+    displayProduct()
+    {
+        console.log(`Product: ${this.name}`) 
+        console.log(`Price: $${this.price}`)
+    }
+}
+
+const product2 = new Product ('Shirt' , 19,99)
+product2.displayProduct() 
